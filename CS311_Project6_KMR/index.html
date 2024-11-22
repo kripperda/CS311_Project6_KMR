@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellarmine Financial Balance Sheet Calculator</title>
+  <link rel="stylesheet" href="css/style.css" >
+  <script src="js/BalanceSheetTest.js"></script>
+</head>
+
+<header>Bellarmine Financial Balance Sheet Calculator</header>
+<body>
+  <div id="container">
+
+<div id="top">
+  <div class="assets">Assets</div>
+  <div class="liabilities">Liabilities</div>
+  
+
+</div>
+
+<div class="flex-grid">
+  <h3>
+  Current Assets
+  </h3>
+  <br>
+  <h4>
+    Cash: <input type="number" placeholder="Cash" id="cash"> <br>
+    Inventory: <input type="number" placeholder="Inventory" id="inventory"> <br>
+    Supplies: <input type="number" placeholder="Supplies" id="supplies"> <br>
+    Temporary Investments: <input type="number" placeholder="Temporary Investments" id="temporaryInvestments"> <br>
+        <button id="addCurrentAssets" onclick="addCurrentAssets()">Add Current Assets</button><br>
+        Total Current Assets:<span class ="currency-usd" id="currentAssets">$0</span><br>
+        
+    </h4>
+    <h3>
+  Current Liabilities
+  </h3>
+  <br>
+  <h4>
+    Accounts Payable:<input type="number" placeholder="Accounts Payable" id="accountsPayable"> <br>
+    Notes Payable:<input type="number" placeholder="Notes Payable" id="notesPayable"> <br>
+    Interest Payable:<input type="number" placeholder="Interest Payable" id="interestPayable"> <br>
+    Wages Payable:<input type="number" placeholder="Wages Payable" id="wagesPayable"> <br>
+    Accrued Expenses:<input type="number" placeholder="Accrued Expenses" id="accruedExpenses"> <br>
+      <button id="addCurrentLiabilities" onclick="addCurrentLiabilities()" >Add Current Liabilities</button><br>
+      Total Current Liabilities:<span class ="currency-usd" id="currentLiabilities"> $0</span><br>
+    </h4>
+</div>
+
+<div class="flex-grid">
+    <h3>
+  Investment Property & Equipment
+</h3>
+  <br>
+  <h4>
+      Land:<input type="number" placeholder="Land" id="land"> <br>
+      Building and Improvements:<input type="number" placeholder="Building and Improvements" id="buildingImp"> <br>
+      Equipment:<input type="number" placeholder="Equipment" id="equipment"> <br>
+      Temporary Investments:<input type="number" placeholder="Temporary Investments" id="tempInvestments"> <br>
+          <button id="addInvestmentProp" onclick="addInvestmentProp()">Add Investment Property & Equipment</button><br>
+          Total Invesment Property and Equipment:<span class ="currency-usd" id="investmentProp"> $0</span><br>
+      </h4>
+        
+  <h3>
+  Long-Term Liabilities
+  </h3>
+  <br>
+  <h4>
+      Notes Payable:<input type="number" placeholder="Notes Payable" id="notesLTL"> <br>
+      Bonds Payable:<input type="number" placeholder="Bonds Payable" id="bondsLTL"> <br>
+        <button id="addLTL" onclick="addLTL()" >Add Long-Term Liabilities</button><br>    
+        Total Long-Term Liabilities:<span class ="currency-usd" id="ltl">$0</span><br>
+        
+    </h4>
+</div>
+
+<div class="flex-grid">
+    <h3>
+  Intangibles
+    </h3>
+  <br>
+  <h4>
+    Trade Names:<input type="number" placeholder="Trade Names" id="tradeNames"> <br>
+    Goodwill:<input type="number" placeholder="Goodwill" id="goodwill"> <br>
+      <button onclick="addIntangibles()" id="addIntangibles">Add Intangibles</button> <br>   
+      Total Intangibles:<span class ="currency-usd" id="intangibles">$0</span><br>
+        
+    </h4>
+    <h3>
+<div class="col" font-size: 20px>Total Position</div><br>
+<button onclick="calculatePosition()" id="calculatePosition">Calculate Position</button>
+</h3>
+<h4>
+  <div class="col">Total Assets:<span id="totalAssets">$0</span></div>
+  <div class="col">Total Liabilities:<span id="totalLiabilities">$0</span></div>
+  <div class="col">Position:<span id="totalPosition">$0</span></div>  
+</h4>
+    
+  
+  </div>
+</div>
+
+
+<footer>(C) Bellarmine University 2024</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+  height: 100%; 
+
+}
+
+#container {
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
+  font-family: Arial;
+  
+}
+
+#flex{
+  display: flex;
+  margin-left: 10px;
+}
+
+#top {
+  display: flex;
+  flex-flow:column wrap;
+  background: black;
+  height:3%;
+  color: white;
+  font: Arial;
+  font-size: 18px;
+  text-align: justify;
+}
+.assets {
+  flex-flow: row wrap;
+}
+.liabilities{
+  flex-flow: row wrap;
+}
+
+#input{
+  font-size: 20px;
+  color: black;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  background: rgb(218, 150, 4);
+  color: black;
+  font: Arial;
+  font-size: 16px;
+  justify-content:space-around;
+  
+}
+.flex-grid .col{
+  display: flex;
+  flex-direction: column;
+  background: rgb(218, 150, 4);
+  color: black;
+  font: Arial;
+  font-size: 18px;
+  justify-content: center;
+  align-content: left;
+}
+.flex-grid .row{
+  text-align: right;
+  justify-content: end;
+  
+}
+
+main {
+  flex: 10;
+  overflow: auto; 
+}
+.button {
+  background-color: lightgray;
+  color: black;
+  border:none;
+  cursor: pointer;
+}
+.myForm{
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+  flex-wrap:inherit;
+}
+
+header {
+  display: flex;
+  background: maroon; 
+  color: white;
+  font: Arial;
+  font-size: 20px;
+} 
+.input-fields {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+  flex-wrap:inherit;
+}
+
+footer {
+  display: flex;
+  background: maroon; 
+  color: white;
+  font: Arial;
+}
